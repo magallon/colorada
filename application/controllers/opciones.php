@@ -6,6 +6,7 @@ class Opciones extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('usuario_model');
+		$this->load->model('datos_model');
 	}
 
 	// metodo index
@@ -76,6 +77,21 @@ class Opciones extends CI_Controller {
 			$this->session->sess_destroy();
 			redirect('welcome');
 		}
+	}
+
+	public function acciones(){
+		if($this->session->userdata('nombre')){
+			// recuperamos todos los registros y los mandamos a la vista
+			$this->load->view('accion');
+		}else{
+			$this->session->sess_destroy();
+			redirect('welcome');
+		}
+	}
+
+	public function get_registros(){
+		$data = $this->datos_model->get();
+		echo json_encode($data);
 	}
 
 	// Funcion de destruir la sesion

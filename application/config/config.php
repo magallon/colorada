@@ -14,8 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/Colorada/';
-
+//$config['base_url']	= 'http://localhost/Colorada/';	// base_url->MAGALLON
+$config['base_url']	= 'http://localhost/php/colorada/'; // base_url->ADAN 
 /*
 |--------------------------------------------------------------------------
 | Index File

@@ -48,7 +48,7 @@
 					</div><br><br>
 					
 					<input class="boton" type="submit" name="agrega" value="Registrar">
-					<a href="opcion.php"><input class="boton" type="button" name="agrega" value="Volver al Menu"></a>
+					<a href="<?php echo site_url('opciones');?>"><input class="boton" type="button" name="agrega" value="Volver al Menu"></a>
 				</form> 
 		</section>
 		<footer>
