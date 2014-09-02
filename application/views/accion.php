@@ -14,10 +14,10 @@
 		<header>
 			
 			<label>Buscar</label>
-			<input type="text" class="cambio" name="buscar">	
+			<input type="text" class="cambio" name="buscar">
 			<a href="opcion.php"><input id="boton-cerrar" type="button" value="Cerrar Sesion"></a>
 		</header>
-	
+
 		<section class="principal">
 		<caption>Datos de Contratistas</caption>
 			<table class="table table-hover">
