@@ -14,22 +14,15 @@
 		<title>Iniciar sesión</title>
 	</head>
 	<body>
-
-<<<<<<< HEAD
 		<header>
 			
 			<label>Buscar</label>
 			<input type="text" class="cambio" name="buscar">
-			<a href="opcion.php"><input id="boton-cerrar" type="button" value="Cerrar Sesion"></a>
-=======
-		<header>	
 			<a href="<?php echo site_url('opciones/logout')?>"><input id="boton-cerrar" type="button" value="Cerrar Sesion"></a>
->>>>>>> origin/master
 		</header>
 
 		<section class="principal">
-		<caption>Datos de Contratistas</caption>
-			<center>
+		<caption><h2>Datos de Contratistas</h2></caption>
 			<div id="tabla1">
 				<table id="example" class="table table-hover">
 					<thead>
@@ -45,11 +38,8 @@
 							<td>Seguridad</td>
 						</tr>
 					</thead>
-					<tbody>
-					</tbody>
 				</table>
 			</div>
-			</center>
 			<a href="<?php echo site_url('opciones');?>"><input class="boton" type="button" value="Volver al Menu"></a>
 		</section>
 		<footer>
