@@ -43,7 +43,7 @@
 				</div>
 
 				<div class="recuadro">
-				  <a href="accion.php">
+				  <a href="<?php echo site_url('opciones/acciones');?>">
 				    <div class="imagen_recuadro">
 					<img src="img/eliminar-usuario.png">
 				    </div>
