@@ -23,5 +23,18 @@ class Usuario_model extends CI_Model{
 						->set('seguridad',$seguridad)
 						->insert('datos');
 	}
+
+	public function update_datos($seguro,$nombre,$paterno,$materno,$puesto,$empresa,$fecha,$ambiental,$seguridad){
+		return $this->db->where('nss',$seguro)
+						->set('nombre',$nombre)
+						->set('ap_Paterno',$paterno)
+						->set('ap_Materno',$materno)
+						->set('puesto',$puesto)
+						->set('empresa',$empresa)
+						->set('fecha',$fecha)
+						->set('ambiental',$ambiental)
+						->set('seguridad',$seguridad)
+						->update('datos');
+	}
 }
 ?>
