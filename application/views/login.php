@@ -15,7 +15,7 @@
 			<img class="fade" src="img/logo.png" height="90" width="230">
 		</header>
 		<section class="principal">
-				<fieldset><legend>Iniciar sesión</legend>
+				<fieldset class="login"><legend><h2>Iniciar sesión</h2></legend>
 					<form name="frm" method="post" action="<?php echo site_url('welcome/login');?>">
 						<label class="usuario" for="usuario_txt" >Usuario</label>
 						<input class="cambio" type="text" name="usuario_txt" ></br></br>

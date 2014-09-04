@@ -13,7 +13,7 @@
 
 		<header>
 			<img class="fade" src="img/logo.png" height="90" width="230">
-			<a href="opcion.php"><input id="boton-cerrar" type="button" value="Cerrar Sesion"></a>
+			<a href="<?php echo site_url('opciones/logout')?>"><input id="boton-cerrar" type="button" value="Cerrar Sesion"></a>
 		</header>
 		<section class="principal-agrega">
 				<form class="agregar-frm" method="post" action="<?php echo site_url('opciones/alta_datos');?>">
@@ -41,9 +41,9 @@
 						<input class="cambio" type="date" name="fecha" required><br><br>
 						<fieldset><legend><b>Calificaciones</b></legend>
 							<label>Ambiental</label>
-							<input class="cambio" type="number" name="ambiental" required><br><br>
+							<input class="cambio" type="number" name="ambiental" ><br><br>
 							<label>Seguridad</label>
-							<input class="cambio" type="number" name="seguridad" required><br><br>
+							<input class="cambio" type="number" name="seguridad" ><br><br>
 						</fieldset>
 					</div><br><br>
 					
