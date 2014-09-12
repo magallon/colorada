@@ -56,7 +56,7 @@
 				<div class="recuadro">
 				  <a href="<?php echo site_url('opciones/acciones');?>">
 				    <div class="imagen_recuadro">
-					<img src="img/eliminar-usuario.png">
+					<img src="img/agregar-empresa.png">
 				    </div>
 				    <div class="detalles_recuadro">
 				      <p class="especial">Selecciona esta opcion si deseas Agregar o Eliminar una Empresa</p>
@@ -67,7 +67,7 @@
 				<div class="recuadro">
 				  <a href="<?php echo site_url('opciones/acciones');?>">
 				    <div class="imagen_recuadro">
-					<img src="img/eliminar-usuario.png">
+					<img src="img/agregar-puesto.png">
 				    </div>
 				    <div class="detalles_recuadro">
 				      <p class="especial">Selecciona esta opcion si deseas Agregar o Eliminar un Puesto
