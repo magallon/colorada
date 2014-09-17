@@ -53,8 +53,8 @@
 				  </a>
 				</div>
 
-				<div class="recuadro">
-				  <a href="<?php echo site_url('opciones/acciones');?>">
+				<!-- <div class="recuadro">
+				  <a href="<?php //echo site_url('opciones/acciones');?>">
 				    <div class="imagen_recuadro">
 					<img src="img/agregar-empresa.png">
 				    </div>
@@ -65,7 +65,7 @@
 				</div>
 
 				<div class="recuadro">
-				  <a href="<?php echo site_url('opciones/acciones');?>">
+				  <a href="<?php //echo site_url('opciones/acciones');?>">
 				    <div class="imagen_recuadro">
 					<img src="img/agregar-puesto.png">
 				    </div>
@@ -76,7 +76,7 @@
 				    </div>
 				  </a>
 				</div>
-
+ -->
 				<!-- <aside class="cajas">
 					<h4>Buscar </h4>
 				</aside>

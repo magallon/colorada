@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1"/>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<link rel="author" type="text/plain" href="humans.txt"/>
+
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
 		<title>Iniciar sesión</title>
 	</head>
@@ -20,6 +21,9 @@
 					<div class="agregar">
 						<label>NSS</label>
 						<input class="cambio" type="number" name="seguro" required><br><br>
+
+						<label>CURP</label>
+						<input class="cambio" type="text" name="curp" required><br><br>
 						
 						<label>Nombre</label>
 						<input class="cambio" type="text" name="nombre" required><br><br>
@@ -30,15 +34,24 @@
 						<label>Apellido Materno</label>
 						<input class="cambio" type="text" name="materno" required><br><br>
 						
-						<label>Empresa</label>
-						<input class="cambio" type="text" name="empresa" required><br><br>
 					</div>
 
-					<div class="agregar2">
-						<label>Puesto</label>
-						<input class="cambio" type="text" name="puesto" required><br><br>
+					<div class="agregar">
+					<label>Empresa</label>
+					<select name="empresa" class="cambio"> 
+					  <option value="hola">Prueba1</option> 
+					  <option value="ok">Prueba2</option> 
+					</select><br><br>
+
+					<label>Puesto</label>
+					<select name="puesto" class="cambio"> 
+					  <option value="hola">Prueba1</option> 
+					  <option value="ok">prueba2</option> 
+					</select><br><br>
+
 						<label>Fecha</label>
 						<input class="cambio" type="date" name="fecha" required><br><br>
+
 						<fieldset><legend><b>Calificaciones</b></legend>
 							<label>Ambiental</label>
 							<input class="cambio" type="number" name="ambiental" ><br><br>

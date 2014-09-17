@@ -55,7 +55,8 @@
                 // Metodo ajax
                 $.ajax({
                 	type:"POST",
-                	url:"http://localhost/colorada/index.php/opciones/get_registros",
+                	url:"http://localhost/php/colorada/index.php/opciones/get_registros", // -- ADAN
+                	//url:"http://localhost/colorada/index.php/opciones/get_registros", --- MAGALLON
                 	data:{bool:bandera},
                 	success: function(resp){
                 		var datos = jQuery.parseJSON(resp);
