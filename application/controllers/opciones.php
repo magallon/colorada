@@ -128,8 +128,25 @@ class Opciones extends CI_Controller {
 		}
 	}
 
+	public function empresas(){
+		if($this->session->userdata('nombre')){
+			// recuperamos todos los registros y los mandamos a la vista
+			$this->load->view('Tempresas');
+		}else{
+			$this->session->sess_destroy();
+			redirect('welcome');
+		}
+	}
+
+
+
 	public function get_registros(){
 		$data = $this->datos_model->get();
+		echo json_encode($data);
+	}
+
+	public function get_empresa(){
+		$data = $this->datos_model->get_empresas();
 		echo json_encode($data);
 	}
 	
@@ -144,6 +161,22 @@ class Opciones extends CI_Controller {
 				'registro'=>$registro
 			);
 			$this->load->view('update',$data);
+		}else{
+			redirect('opciones');
+		}
+	}
+
+	public function update_empresas(){
+		// verificamos que llegue por post
+		if($this->input->post()){
+			// almacenamos en variable $id
+			$id = $this->input->post('idempresas');
+			// hacemos la  consulta 
+			$registro = $this->datos_model->get_empresas($id);
+			$data = array(
+				'registro'=>$registro
+			);
+			$this->load->view('update_empresas',$data);
 		}else{
 			redirect('opciones');
 		}

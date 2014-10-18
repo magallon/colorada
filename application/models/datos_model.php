@@ -7,6 +7,10 @@ class Datos_model extends CI_Model{
 	public function get(){
 		return $this->db->get('datos')->result();
 	}
+		//CM
+	public function get_empresas(){
+		return $this->db->get('empresas')->result();
+	}
 
 	public function get_usuario($id){
 		return $this->db->where('nss',$id)

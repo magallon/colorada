@@ -36,5 +36,11 @@ class Usuario_model extends CI_Model{
 						->set('seguridad',$seguridad)
 						->update('datos');
 	}
+
+	public function update_empresas($idempresas, $nombre, $fecha){
+		return $this->db->where('idempresas',$idempresas)
+						->set('nombre',$nombre)
+						->set('fecha',$fecha);
+	}
 }
 ?>
