@@ -21,7 +21,7 @@
 		<section class="principal">
 		<caption><h2>Datos de Empresas Contratistas</h2></caption>
 			<div id="tabla1">
-				<table id="example" class="table table-hover">
+				<!-- <table id="example" class="table table-hover">
 					<thead>
 						<tr>
 							<td>Nombre</td>
@@ -29,7 +29,7 @@
 							<td>Acciones</td>
 						</tr>
 					</thead>
-				</table>
+				</table> -->
 			</div>
 			<a href="<?php echo site_url('opciones');?>"><input class="boton" type="button" value="Volver al Menu"></a>
 		</section>
@@ -43,7 +43,7 @@
         <script>
         	$(document).ready(function() {
         		var bandera = 1;
-                $('#example').dataTable();
+                
 
                 // Metodo ajax
                 $.ajax({
@@ -55,7 +55,7 @@
                 		var datos = jQuery.parseJSON(resp);
                 		//console.log(datos);
                 		var cadena = "";
-                		cadena += "<table id='example' class='table table-hover'><thead><tr><th>NOMBRE</th><th>FECHA</th></tr></thead><tbody>";
+                		cadena += "<table id='example' class='table table-hover'><thead><tr><th>NOMBRE</th><th>FECHA</th><th>ACCIONES</th></tr></thead><tbody>";
                 		for(var i = 0; i < datos.length; i++){	
 	                		cadena += "<tr><td>"+datos[i].nombre+"</td><td>"+datos[i].fecha+"</td><td><form style='float:left;' action='<?php echo site_url('opciones/update_empresas');?>' method='post'><input type='hidden' value='"+datos[i].idempresas+"' name='id'/><input type='image' data-toggle='tooltip' title='Actualizar' src='images/update.png' width='30'></form><form action ='<?php echo site_url('opciones/delete');?>' method='post'><input type='hidden' value='"+datos[i].idempresas+"' name='id'/><input type='image' data-toggle='tooltip' title='Eliminar' src='images/delete.png' width='30'></form></td></tr>";
                 		}
