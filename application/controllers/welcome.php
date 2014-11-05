@@ -5,7 +5,7 @@ class Welcome extends CI_Controller {
 	//constructor
 	public function __construct(){
 		parent::__construct();
-		$this->load->model('usuario_model');
+		$this->load->model('general_model');
 	}
 
 	public function index()
@@ -21,7 +21,7 @@ class Welcome extends CI_Controller {
 			$pass = $this->input->post('pass');
 
 			// Consultamos en la base de datos  
-			$valida = $this->usuario_model->valida_usuario($usuario_txt,$pass);
+			$valida = $this->general_model->valida_usuario($usuario_txt,$pass);
 
 			if(is_object($valida)) {
 				// Creamos variables de session

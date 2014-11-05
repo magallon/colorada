@@ -190,3 +190,30 @@ input[type="button"]:hover {
 td #actions form{
   display: inline !important;
 }
+
+table th {
+  font-size: 14px;
+  text-align: center;
+}
+
+table tr td{
+  font-size: 12px;
+}
+
+.form_update_emp{
+  float: left;
+  margin-left: 80px;
+}
+
+#form_update_emp input, #form_update_del input{
+  width: 20px;
+}
+
+.delete_emp, .update_emp{
+  font-size: 20px;
+}
+
+.delete_emp:hover, .update_emp:hover{
+  color: #7A80DD;
+  cursor: pointer;
+}

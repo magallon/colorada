@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<link rel="author" type="text/plain" href="humans.txt"/>
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
-		<title>Iniciar sesión</title>
+		<title>Actualizar empresas</title>
 	</head>
 	<body>
 
@@ -16,9 +16,11 @@
 			<a href="opcion.php"><input id="boton-cerrar" type="button" value="Cerrar Sesion"></a>
 		</header>
 		<section class="principal-agrega">
-				<form class="agregar-frm" method="post" action="<?php echo site_url('opciones/update_empresas');?>">
+				<form class="agregar-frm" method="post" action="<?php echo site_url('opciones/update_empresa');?>">
 					<div class="agregar">
 						
+						<input type="hidden" name="id" value="<?php echo $registro->id?>"/>
+
 						<label>Nombre</label>
 						<input class="cambio" type="text" name="nombre" value="<?php echo $registro->nombre?>" ><br><br>
 
@@ -27,7 +29,9 @@
 					</div><br><br>
 					
 					<input class="boton" type="submit" name="agrega" value="Actualizar">
-					<a href="<?php echo site_url('opciones/acciones');?>"><input class="boton" type="button" name="agrega" value="Regresar"></a>
+					<a href="<?php echo site_url('opciones/empresas');?>">
+						<input class="boton" type="button" name="agrega" value="Regresar">
+					</a>
 				</form> 
 		</section>
 		<footer>

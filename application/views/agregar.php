@@ -8,7 +8,7 @@
 		<link rel="author" type="text/plain" href="humans.txt"/>
 
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
-		<title>Iniciar sesión</title>
+		<title>Agregar registro</title>
 	</head>
 	<body>
 
@@ -38,15 +38,19 @@
 
 					<div class="agregar">
 					<label>Empresa</label>
-					<select name="empresa" class="cambio"> 
-					  <option value="hola">Prueba1</option> 
-					  <option value="ok">Prueba2</option> 
+					<select name="id_empresa" class="cambio"> 
+						<option value="#">Selecciona una empresa</option>
+					  <?php foreach($empresas as $empresa){ ?>
+						<option value="<?php echo $empresa->id;?>"><?php echo $empresa->nombre;?></option>
+					  <?php } ?>
 					</select><br><br>
 
 					<label>Puesto</label>
-					<select name="puesto" class="cambio"> 
-					  <option value="hola">Prueba1</option> 
-					  <option value="ok">prueba2</option> 
+					<select name="id_puesto" class="cambio"> 
+					  <option value="#">Selecciona un puesto</option> 
+					  <?php foreach($puestos as $puesto) { ?>
+					   <option value="<?php echo $puesto->id?>"><?php echo $puesto->nombre?></option>
+					  <?php } ?>
 					</select><br><br>
 
 						<label>Fecha</label>
