@@ -110,5 +110,8 @@ class General_model extends CI_Model{
 		return $this->db->where('id',$id)
 						->delete('empresas');
 	}
+	public function agregaEmpresa($data_model){
+		return $this->db->insert('empresas',$data_model);
+	}
 }
 ?>

@@ -18,19 +18,6 @@
 		<section class="principal-opcion">
 		<p style="float:left; margin-top:-50px;">Bienvenido: <?php echo $this->session->userdata('nombre')?></p>
 				<h2>Selecciona una Opción</h2>
-		<!-- 		<a href="agregar.php">
-		
-			<aside class="cajas">
-			<h4>Agregar</h4>
-			</aside>
-		</a>
-		
-		<a href="accion.php">
-			<aside class="cajas">
-			<h4>Acciones</h4>
-			</aside>
-		</a> -->
-
 				<div class="recuadro">
 				  <a href="<?php echo site_url('opciones/agregar');?>">
 				    <div class="imagen_recuadro">
@@ -65,7 +52,7 @@
 				</div>
 
 				<div class="recuadro">
-				  <a href="<?php echo site_url('opciones/acciones');?>">
+				  <a href="<?php echo site_url('opciones/puestos');?>">
 				    <div class="imagen_recuadro">
 					<img src="img/agregar-puesto.png">
 				    </div>

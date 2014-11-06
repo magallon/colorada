@@ -37,7 +37,7 @@
 					</thead>
 					<tbody>
 						<?php foreach($contratistas as $row) { ?>
-						<tr>
+						<tr class="<?php if($row->cal_ambiental >= '7' && $row->cal_seguridad >= "7"){echo 'bg-success';}else{echo 'bg-danger';} ?>">
 							<td><?php echo $row->nss?></td>
 							<td><?php echo $row->nombre." ".$row->apellido_p." ".$row->apellido_m;?></td>
 							<td><?php echo $row->empresa_id?></td>

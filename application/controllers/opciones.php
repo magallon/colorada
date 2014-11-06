@@ -225,6 +225,31 @@ class Opciones extends CI_Controller {
 			$this->session->sess_destroy();
 			redirect('welcome');
 		}
+	}
+	public function agregaEmpresa(){
+		if ($this->session->userdata('nombre')) {
+			if($this->input->post()){
+				$data_model['nombre'] = $this->input->post('nombre');
+				$data_model['fecha'] = date('Y-m-d');
+				$this->general_model->agregaEmpresa($data_model);
+				redirect('opciones/empresas');
+			}else{
+				redirect('opciones/empresas');
+			}
+		} else {
+			$this->session->sess_destroy();
+			redirect('welcome');
+		}
+	}
+	public function puestos(){
+		if($this->session->userdata('nombre')){
+			// recuperamos todos los registros y los mandamos a la vista
+			$data['puestos'] = $this->general_model->get_puestos();
+			$this->load->view('puestos',$data);
+		}else{
+			$this->session->sess_destroy();
+			redirect('welcome');
+		}
 	}	
 	// Funcion de destruir la sesion
 	public function logout()
